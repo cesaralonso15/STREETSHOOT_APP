@@ -17,7 +17,7 @@ class Registro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.registro_layout)
 
-        // Inputs
+        //Inputs
         val tilNick = findViewById<TextInputLayout>(R.id.tilNick)
         val tilEmail = findViewById<TextInputLayout>(R.id.tilEmail)
         val tilPassword = findViewById<TextInputLayout>(R.id.tilPassword)
@@ -52,7 +52,7 @@ class Registro : AppCompatActivity() {
 
             var valid = true
 
-            // Nick
+            //Nick
             if (nick.isEmpty()) {
                 tilNick.error = "El nick es obligatorio"
                 valid = false
