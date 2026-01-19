@@ -60,7 +60,8 @@ class InicioSesion : AppCompatActivity() {
             //Login funcional provisional
             btnLogin.postDelayed({
                 setLoading(false)
-                startActivity(Intent(this, ZoneSelectActivity::class.java))
+                //esta linea es para cuando siga despues de inicio sesion
+                // startActivity(Intent(this, ZoneSelectActivity::class.java))
                 finish()
             }, 600)
         }
