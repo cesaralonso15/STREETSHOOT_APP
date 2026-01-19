@@ -17,7 +17,6 @@ class InicioSesion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 🔴 IMPORTANTE: nombre correcto del layout
         setContentView(R.layout.iniciosesion_layout)
 
         val tilEmail = findViewById<TextInputLayout>(R.id.tilEmail)
@@ -61,13 +60,13 @@ class InicioSesion : AppCompatActivity() {
             // 🔹 Login funcional provisional (Sprint actual)
             btnLogin.postDelayed({
                 setLoading(false)
-                //startActivity(Intent(this, ZoneSelectActivity::class.java))
+                startActivity(Intent(this, ZoneSelectActivity::class.java))
                 finish()
             }, 600)
         }
 
         tvGoRegister.setOnClickListener {
-            //startActivity(Intent(this, RegisterActivity::class.java))
+            startActivity(Intent(this, Registro::class.java))
         }
 
         tvForgot.setOnClickListener {
