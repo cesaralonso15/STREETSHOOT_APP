@@ -57,7 +57,7 @@ class InicioSesion : AppCompatActivity() {
 
             setLoading(true)
 
-            // 🔹 Login funcional provisional (Sprint actual)
+            //Login funcional provisional
             btnLogin.postDelayed({
                 setLoading(false)
                 startActivity(Intent(this, ZoneSelectActivity::class.java))
