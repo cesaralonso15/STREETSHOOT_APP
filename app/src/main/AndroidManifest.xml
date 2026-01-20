@@ -11,7 +11,7 @@
 
         <!-- ACTIVIDAD PRINCIPAL -->
         <activity
-            android:name=".MainActivity"
+            android:name=".InicioSesion"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,15 +19,14 @@
             </intent-filter>
         </activity>
 
-        <!-- INICIO DE SESIÓN -->
-        <activity
-            android:name=".InicioSesion"
-            android:exported="false" />
 
         <!-- REGISTRO -->
         <activity
             android:name=".Registro"
             android:exported="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
     </application>
 
