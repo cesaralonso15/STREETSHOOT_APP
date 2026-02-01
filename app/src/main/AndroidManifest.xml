@@ -19,6 +19,16 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".HubActivity" />
+        <activity android:name=".ZonasActivity" />
+        <activity android:name=".StreetspotsActivity" />
+        <activity android:name=".RetosActivity" />
+        <activity android:name=".NotificacionesActivity" />
+        <activity android:name=".PersonalizarPerfilActivity" />
+
+
+
+
 
         <!-- REGISTRO -->
         <activity

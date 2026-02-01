@@ -16,14 +16,12 @@ class InicioSesion : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.iniciosesion_layout)
 
         val tilEmail = findViewById<TextInputLayout>(R.id.tilEmail)
         val tilPassword = findViewById<TextInputLayout>(R.id.tilPassword)
         val etEmail = findViewById<TextInputEditText>(R.id.etEmail)
         val etPassword = findViewById<TextInputEditText>(R.id.etPassword)
-
         val btnLogin = findViewById<MaterialButton>(R.id.btnLogin)
         val progress = findViewById<CircularProgressIndicator>(R.id.progress)
         val tvGoRegister = findViewById<TextView>(R.id.tvGoRegister)
@@ -42,27 +40,25 @@ class InicioSesion : AppCompatActivity() {
             val password = etPassword.text?.toString().orEmpty()
 
             var valid = true
-
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 tilEmail.error = "Email no válido"
                 valid = false
             }
-
             if (password.length < 4) {
                 tilPassword.error = "Contraseña demasiado corta"
                 valid = false
             }
-
             if (!valid) return@setOnClickListener
 
             setLoading(true)
 
-            //Login funcional provisional
+            // Login funcional provisional (simula llamada)
             btnLogin.postDelayed({
                 setLoading(false)
-                //esta linea es para cuando siga despues de inicio sesion
-                // startActivity(Intent(this, ZoneSelectActivity::class.java))
+
+                startActivity(Intent(this, HubActivity::class.java))
                 finish()
+
             }, 600)
         }
 

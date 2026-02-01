@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9C378"
+    android:padding="20dp">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/ivLogo2"
+        android:layout_width="186dp"
+        android:layout_height="135dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- BOTON PERFIL ABAJO -->
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personalizar perfil"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4B8698"
+        android:paddingHorizontal="22dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- GRID 2x2 -->
+    <GridLayout
+        android:id="@+id/gridHub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="18dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo2"
+        app:layout_constraintBottom_toTopOf="@id/btnPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- ZONAS -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardZonas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="6dp"
+            app:strokeColor="@android:color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4B8698"
+                android:fontFamily="@font/bangers"
+                android:gravity="center"
+                android:text="ZONAS"
+                android:textColor="#F4F4F4"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- STREETSPOTS -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardStreetspots"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="6dp"
+            app:strokeColor="@android:color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4B8698"
+                android:fontFamily="@font/bangers"
+                android:gravity="center"
+                android:text="STREETSPOTS"
+                android:textColor="#F4F4F4"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- RETOS -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardRetos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="6dp"
+            app:strokeColor="@android:color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4B8698"
+                android:fontFamily="@font/bangers"
+                android:gravity="center"
+                android:text="RETOS"
+                android:textColor="#F4F4F4"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- NOTIFICACIONES -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardNotifs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="6dp"
+            app:strokeColor="@android:color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4B8698"
+                android:fontFamily="@font/bangers"
+                android:gravity="center"
+                android:text="NOTIFICACIONES"
+                android:textColor="#F4F4F4"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
